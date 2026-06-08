@@ -1,0 +1,434 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Education Foundation</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+
+<body
+  class="bg-gradient-to-b from-green-50 to-white text-stone-900 transition-colors duration-300">
+  <!-- Navbar -->
+  <nav id="navbar"
+  class="fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-white/70 border-b border-green-100">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Top Bar -->
+    <div class="flex justify-between items-center h-20">
+
+      <!-- Logo -->
+      <h1 class="logo-text font-bold text-2xl text-green-700">
+        TEF
+      </h1>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center gap-8">
+
+        <a href="#about" class="nav-link hover:text-green-700">
+          About
+        </a>
+
+        <a href="#mission" class="nav-link hover:text-green-700">
+          Mission
+        </a>
+
+        <a href="#contact" class="nav-link hover:text-green-700">
+          Contact
+        </a>
+
+        <button
+          id="themeToggle"
+          class="p-2 rounded-full bg-green-100 hover:bg-green-200 transition"
+          aria-label="Toggle theme">
+          🌙
+        </button>
+
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="md:hidden text-green-700">
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-8 h-8"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor">
+
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
+
+        </svg>
+
+      </button>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobileMenu"
+      class="max-h-0 overflow-hidden transition-all duration-300 md:hidden">
+
+      <div class="flex flex-col gap-4 pb-6">
+
+        <a href="#about" class="mobile-link">
+          About
+        </a>
+
+        <a href="#mission" class="mobile-link">
+          Mission
+        </a>
+
+        <a href="#contact" class="mobile-link">
+          Contact
+        </a>
+
+        <button
+          id="mobileThemeToggle"
+          class="text-left">
+          🌙 Dark Mode
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</nav>
+      
+  <!-- Hero -->
+  <section class="relative h-screen overflow-hidden">
+
+    <div class="swiper heroSwiper h-full">
+
+      <div class="swiper-wrapper">
+
+        <!-- SLIDE 1 -->
+        <div class="swiper-slide">
+          <div class="h-screen flex items-center justify-center bg-cover bg-center relative"
+               style="background-image:url('https://images.unsplash.com/photo-1509062522246-3755977927d7')">
+
+            <div class="absolute inset-0 bg-black/60"></div>
+
+            <div class="relative z-10 text-center text-white max-w-4xl px-6">
+
+              <span class="hero-badge inline-block bg-green-500/80 px-4 py-2 rounded-full mb-6">
+                🌱 Empowering Education
+              </span>
+
+              <h1 class="hero-title text-5xl md:text-7xl font-bold">
+                Building a Better Future
+              </h1>
+
+              <p class="hero-text mt-6 text-lg md:text-xl text-white/90">
+                Supporting students and communities through education.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div class="swiper-slide">
+          <div class="h-screen flex items-center justify-center bg-cover bg-center relative"
+               style="background-image:url('https://images.unsplash.com/photo-1523240795612-9a054b0db644')">
+
+            <div class="absolute inset-0 bg-black/60"></div>
+
+            <div class="relative z-10 text-center text-white max-w-4xl px-6">
+
+              <span class="hero-badge inline-block bg-green-500/80 px-4 py-2 rounded-full mb-6">
+                🎓 Education For All
+              </span>
+
+              <h1 class="hero-title text-5xl md:text-7xl font-bold">
+                Empowering Young Minds
+              </h1>
+
+              <p class="hero-text mt-6 text-lg md:text-xl text-white/90">
+                Creating opportunities for a brighter future.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div class="swiper-slide">
+          <div class="h-screen flex items-center justify-center bg-cover bg-center relative"
+               style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f')">
+
+            <div class="absolute inset-0 bg-black/60"></div>
+
+            <div class="relative z-10 text-center text-white max-w-4xl px-6">
+
+              <span class="hero-badge inline-block bg-green-500/80 px-4 py-2 rounded-full mb-6">
+                📚 Learning Together
+              </span>
+
+              <h1 class="hero-title text-5xl md:text-7xl font-bold">
+                Education Changes Lives
+              </h1>
+
+              <p class="hero-text mt-6 text-lg md:text-xl text-white/90">
+                Building stronger communities through learning.
+              </p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+
+    </div>
+
+  </section>
+  <section class="py-20 bg-white">
+
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
+
+    <div data-aos="fade-up">
+      <h2 class="text-5xl font-bold text-green-700 counter" data-target="5000">0</h2>
+      <p class="text-gray-600 mt-2">Students Supported</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="200">
+      <h2 class="text-5xl font-bold text-green-700 counter" data-target="120">0</h2>
+      <p class="text-gray-600 mt-2">Schools Reached</p>
+    </div>
+
+    <div data-aos="fade-up" data-aos-delay="400">
+      <h2 class="text-5xl font-bold text-green-700 counter" data-target="35">0</h2>
+      <p class="text-gray-600 mt-2">Projects Completed</p>
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- About -->
+  <section id="about" class="py-28">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="grid md:grid-cols-2 gap-14 items-center">
+
+        <img
+          src="https://images.unsplash.com/photo-1509062522246-3755977927d7"
+          class="rounded-3xl shadow-xl w-full object-cover h-[450px]">
+
+        <div>
+
+          <h2 class="text-4xl font-bold text-stone-900">
+
+            About Us
+
+          </h2>
+
+          <p class="mt-6 text-stone-600 leading-relaxed">
+
+            We are dedicated to improving access to education and creating opportunities for learners of all backgrounds. Through community partnerships and educational support programs, we help students reach their full potential.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Mission Vision -->
+  <section id="mission" class="py-20">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-14">
+
+        <h2 class="text-4xl font-bold text-stone-900">
+          Mission & Vision
+        </h2>
+
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <div
+          class="bg-white p-10 rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,.08)]">
+
+          <div class="text-4xl mb-4">
+            🎯
+          </div>
+
+          <h3 class="text-2xl font-semibold text-green-700">
+            Mission
+          </h3>
+
+          <p class="mt-4 text-stone-600">
+
+            To provide equitable access to quality education and empower individuals through learning opportunities.
+
+          </p>
+
+        </div>
+
+        <div
+          class="bg-white p-10 rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,.08)]">
+
+          <div class="text-4xl mb-4">
+            🌱
+          </div>
+
+          <h3 class="text-2xl font-semibold text-green-700">
+            Vision
+          </h3>
+
+          <p class="mt-4 text-stone-600">
+
+            A future where every learner has the opportunity to thrive, grow, and contribute positively to society.
+
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-28">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <!-- Contact Info -->
+
+        <div
+          class="bg-white p-10 rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,.08)]">
+
+          <h2 class="text-3xl font-bold text-stone-900 mb-8">
+
+            Contact Us
+
+          </h2>
+
+          <div class="space-y-6">
+
+            <div>
+              <h4 class="font-semibold text-green-700">
+                Address
+              </h4>
+              <p class="text-stone-600">
+                Yangon, Myanmar
+              </p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-green-700">
+                Phone
+              </h4>
+              <p class="text-stone-600">
+                +95 9 123 456 789
+              </p>
+            </div>
+
+            <div>
+              <h4 class="font-semibold text-green-700">
+                Email
+              </h4>
+              <p class="text-stone-600">
+                info@education.org
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Map -->
+
+        <div
+          class="rounded-3xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,.08)]">
+
+          <iframe
+            src="https://maps.google.com/maps?q=yangon&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="450"
+            style="border:0;"
+            loading="lazy">
+          </iframe>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="border-t border-green-100 py-8">
+
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <p class="text-stone-500">
+
+        © 2026 Education Foundation. All Rights Reserved.
+
+      </p>
+
+    </div>
+
+  </footer>
+<!-- ================= SCRIPTS ================= -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- MAIN JS -->
+  <script src="js/main.js"></script>  
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!--AOS Initialization-->
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+ 
+</html>
